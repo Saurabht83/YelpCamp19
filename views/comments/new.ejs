@@ -1,0 +1,24 @@
+<% include ../partials/header.ejs  %>
+
+<div class = "container">
+      
+            <h1 style = "text-align:center;">Enter Comment:  </h1>
+            <div class = "form_width"> 
+                        <form action="/campgrounds/<%= camp._id  %>/comments"  method = "POST"> 
+        
+                        <div class = "form-group">
+                        <label> Comment:   </label>
+                        <input class = "form-control " type = "text" name = "comment[text]" placeholder = "comment">
+                        </div>
+                        
+                        
+                        <div class = "form-group">
+                        <button class ="btn btn-lg btn-primary btn-block">  Create Comment  </button>
+                        </div>
+                        
+                        </form>
+                         <a href = "/campgrounds" class = "btn btn-lg btn-danger" > Go Back </a>
+            </div>
+
+ </div>
+<% include ../partials/footer.ejs  %>
