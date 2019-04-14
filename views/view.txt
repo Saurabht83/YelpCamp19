@@ -1,0 +1,1 @@
+All .ejs files will be in this directory.
