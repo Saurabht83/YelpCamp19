@@ -11,9 +11,9 @@ var express           = require("express"),
     LocalStrategy     = require("passport-local"),
     eSession          = require("express-session");
 
-var campRoutes        = require("./routes/campground"),
-    authRoutes        = require("./routes/user"),
-    commentRoutes     = require("./routes/comments");
+var campRoutes        = require("./rotes/campground"),
+    authRoutes        = require("./rotes/user"),
+    commentRoutes     = require("./rotes/comments");
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(methodOverride("_method"));
